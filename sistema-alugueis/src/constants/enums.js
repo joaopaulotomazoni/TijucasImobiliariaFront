@@ -1,0 +1,220 @@
+export const ROLES = {
+  ADMIN: 'ADMIN',
+  CORRETOR: 'CORRETOR',
+  CLIENTE: 'CLIENTE',
+};
+
+export const STAFF_ROLES = [ROLES.ADMIN, ROLES.CORRETOR];
+
+export const PROPERTY_STATUS = {
+  DISPONIVEL: 'DISPONIVEL',
+  ALUGADO: 'ALUGADO',
+  MANUTENCAO: 'MANUTENCAO',
+  INATIVO: 'INATIVO',
+};
+
+export const PROPERTY_STATUS_LABELS = {
+  [PROPERTY_STATUS.DISPONIVEL]: 'Disponível',
+  [PROPERTY_STATUS.ALUGADO]: 'Alugado',
+  [PROPERTY_STATUS.MANUTENCAO]: 'Em Manutenção',
+  [PROPERTY_STATUS.INATIVO]: 'Inativo',
+};
+
+export const PROPERTY_STATUS_VARIANTS = {
+  [PROPERTY_STATUS.DISPONIVEL]: 'success',
+  [PROPERTY_STATUS.ALUGADO]: 'info',
+  [PROPERTY_STATUS.MANUTENCAO]: 'warning',
+  [PROPERTY_STATUS.INATIVO]: 'error',
+};
+
+export const PROPERTY_TYPE = {
+  CASA: 'CASA',
+  APARTAMENTO: 'APARTAMENTO',
+  COMERCIAL: 'COMERCIAL',
+  TERRENO: 'TERRENO',
+  GALPAO: 'GALPAO',
+  OUTRO: 'OUTRO',
+};
+
+export const PROPERTY_TYPE_LABELS = {
+  [PROPERTY_TYPE.CASA]: 'Casa',
+  [PROPERTY_TYPE.APARTAMENTO]: 'Apartamento',
+  [PROPERTY_TYPE.COMERCIAL]: 'Comercial',
+  [PROPERTY_TYPE.TERRENO]: 'Terreno',
+  [PROPERTY_TYPE.GALPAO]: 'Galpão',
+  [PROPERTY_TYPE.OUTRO]: 'Outro',
+};
+
+export const BRAZILIAN_STATES = [
+  'AC',
+  'AL',
+  'AP',
+  'AM',
+  'BA',
+  'CE',
+  'DF',
+  'ES',
+  'GO',
+  'MA',
+  'MT',
+  'MS',
+  'MG',
+  'PA',
+  'PB',
+  'PR',
+  'PE',
+  'PI',
+  'RJ',
+  'RN',
+  'RS',
+  'RO',
+  'RR',
+  'SC',
+  'SP',
+  'SE',
+  'TO',
+];
+
+export const LEASE_STATUS = {
+  ATIVO: 'ATIVO',
+  ENCERRADO: 'ENCERRADO',
+  RESCINDIDO: 'RESCINDIDO',
+  INADIMPLENTE: 'INADIMPLENTE',
+};
+
+export const LEASE_STATUS_LABELS = {
+  [LEASE_STATUS.ATIVO]: 'Ativo',
+  [LEASE_STATUS.ENCERRADO]: 'Encerrado',
+  [LEASE_STATUS.RESCINDIDO]: 'Rescindido',
+  [LEASE_STATUS.INADIMPLENTE]: 'Inadimplente',
+};
+
+export const LEASE_STATUS_VARIANTS = {
+  [LEASE_STATUS.ATIVO]: 'success',
+  [LEASE_STATUS.ENCERRADO]: 'warning',
+  [LEASE_STATUS.RESCINDIDO]: 'error',
+  [LEASE_STATUS.INADIMPLENTE]: 'error',
+};
+
+export const REAJUSTE_INDEX = {
+  IGPM: 'IGPM',
+  IPCA: 'IPCA',
+  INPC: 'INPC',
+  FIXO: 'FIXO',
+};
+
+export const REAJUSTE_INDEX_LABELS = {
+  [REAJUSTE_INDEX.IGPM]: 'IGP-M',
+  [REAJUSTE_INDEX.IPCA]: 'IPCA',
+  [REAJUSTE_INDEX.INPC]: 'INPC',
+  [REAJUSTE_INDEX.FIXO]: 'Fixo (sem índice)',
+};
+
+export const BANK_ACCOUNT_TYPE = {
+  CORRENTE: 'CORRENTE',
+  POUPANCA: 'POUPANCA',
+};
+
+export const BANK_ACCOUNT_TYPE_LABELS = {
+  [BANK_ACCOUNT_TYPE.CORRENTE]: 'Conta Corrente',
+  [BANK_ACCOUNT_TYPE.POUPANCA]: 'Conta Poupança',
+};
+
+// ===== Garantias locatícias (Lei 8.245/91) =====
+
+export const GUARANTEE_TYPE = {
+  CAUCAO: 'CAUCAO',
+  FIADOR: 'FIADOR',
+  SEGURO_FIANCA: 'SEGURO_FIANCA',
+};
+
+export const GUARANTEE_TYPE_LABELS = {
+  [GUARANTEE_TYPE.CAUCAO]: 'Caução',
+  [GUARANTEE_TYPE.FIADOR]: 'Fiador',
+  [GUARANTEE_TYPE.SEGURO_FIANCA]: 'Seguro Fiança',
+};
+
+export const GUARANTEE_STATUS = {
+  ATIVA: 'ATIVA',
+  SUBSTITUIDA: 'SUBSTITUIDA',
+  ENCERRADA: 'ENCERRADA',
+};
+
+export const GUARANTEE_STATUS_LABELS = {
+  [GUARANTEE_STATUS.ATIVA]: 'Ativa',
+  [GUARANTEE_STATUS.SUBSTITUIDA]: 'Substituída',
+  [GUARANTEE_STATUS.ENCERRADA]: 'Encerrada',
+};
+
+export const GUARANTEE_STATUS_VARIANTS = {
+  [GUARANTEE_STATUS.ATIVA]: 'success',
+  [GUARANTEE_STATUS.SUBSTITUIDA]: 'warning',
+  [GUARANTEE_STATUS.ENCERRADA]: 'info',
+};
+
+// Por ora o sistema só aceita caução em dinheiro.
+export const CAUCAO_MODALITY = {
+  DINHEIRO: 'DINHEIRO',
+};
+
+export const CAUCAO_MODALITY_LABELS = {
+  [CAUCAO_MODALITY.DINHEIRO]: 'Dinheiro (poupança)',
+};
+
+export const MARITAL_STATUS = {
+  SOLTEIRO: 'SOLTEIRO',
+  CASADO: 'CASADO',
+  DIVORCIADO: 'DIVORCIADO',
+  VIUVO: 'VIUVO',
+  UNIAO_ESTAVEL: 'UNIAO_ESTAVEL',
+};
+
+export const MARITAL_STATUS_LABELS = {
+  [MARITAL_STATUS.SOLTEIRO]: 'Solteiro(a)',
+  [MARITAL_STATUS.CASADO]: 'Casado(a)',
+  [MARITAL_STATUS.DIVORCIADO]: 'Divorciado(a)',
+  [MARITAL_STATUS.VIUVO]: 'Viúvo(a)',
+  [MARITAL_STATUS.UNIAO_ESTAVEL]: 'União estável',
+};
+
+export const PROPERTY_REGIME = {
+  COMUNHAO_PARCIAL: 'COMUNHAO_PARCIAL',
+  COMUNHAO_UNIVERSAL: 'COMUNHAO_UNIVERSAL',
+  SEPARACAO_ABSOLUTA: 'SEPARACAO_ABSOLUTA',
+  PARTICIPACAO_FINAL: 'PARTICIPACAO_FINAL',
+};
+
+export const PROPERTY_REGIME_LABELS = {
+  [PROPERTY_REGIME.COMUNHAO_PARCIAL]: 'Comunhão parcial de bens',
+  [PROPERTY_REGIME.COMUNHAO_UNIVERSAL]: 'Comunhão universal de bens',
+  [PROPERTY_REGIME.SEPARACAO_ABSOLUTA]: 'Separação absoluta de bens',
+  [PROPERTY_REGIME.PARTICIPACAO_FINAL]: 'Participação final nos aquestos',
+};
+
+export const INSURANCE_STATUS = {
+  PENDENTE: 'PENDENTE',
+  APROVADA: 'APROVADA',
+  REJEITADA: 'REJEITADA',
+};
+
+export const INSURANCE_STATUS_LABELS = {
+  [INSURANCE_STATUS.PENDENTE]: 'Pendente',
+  [INSURANCE_STATUS.APROVADA]: 'Aprovada',
+  [INSURANCE_STATUS.REJEITADA]: 'Rejeitada',
+};
+
+export const PREMIUM_PERIODICITY = {
+  MENSAL: 'MENSAL',
+  ANUAL: 'ANUAL',
+};
+
+export const PREMIUM_PERIODICITY_LABELS = {
+  [PREMIUM_PERIODICITY.MENSAL]: 'Mensal',
+  [PREMIUM_PERIODICITY.ANUAL]: 'Anual',
+};
+
+// Tipos de documento aceitos pelo backend em /uploads/presign
+export const UPLOAD_DOC_TYPE = {
+  COMPROVANTE_RENDA: 'COMPROVANTE_RENDA',
+  APOLICE_SEGURO: 'APOLICE_SEGURO',
+};
